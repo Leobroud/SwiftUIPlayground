@@ -32,6 +32,26 @@ struct ContentView: View {
                     .font(.system(size: 70, weight: .medium))
                     .foregroundStyle(.white)
                 }
+                
+                HStack {
+                    VStack() {
+                        Text("SEG")
+                            .font(.system(size: 30, weight: .medium))
+                            .foregroundStyle(.white)
+                        
+                        Image(systemName: "cloud.sun.fill")
+                        .renderingMode(.original)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 40, height: 40)
+                        
+                        Text("35°")
+                        .font(.system(size: 40, weight: .medium))
+                        .foregroundStyle(.white)
+                        }
+                }
+                
+                
                 Spacer()
             }
         }
